@@ -1,0 +1,88 @@
+@import "reset";
+
+body {
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem;
+    gap: 4rem;
+
+    .title {
+        margin: 2rem 0;
+        h1 {
+            color: #39626c;
+        }
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+        width: 25rem;
+
+        &:hover {
+            .card {
+                width: 15rem;
+
+                img {
+                    width: 15rem;
+                    border-radius: 1rem;
+                }
+
+                &.first {
+                    img {
+                        transform: translate(4rem, 0.4rem) rotate(-5deg) scale(0.8);
+                    }
+                }
+
+                &.second {
+                    z-index: 5;
+                    img {
+                        transform: scale(0.9);
+                    }
+                }
+
+                &.third {
+                    img {
+                        transform: translate(-4rem, 0.4rem) rotate(5deg) scale(0.8);
+                    }
+                }
+            }
+        }
+
+        .card {
+            width: 15rem;
+
+            img {
+                width: 15rem;
+                border-radius: 1rem;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &.first {
+                z-index: -1;
+                img {
+                    transform: translate(8rem, 0.5rem) rotate(-10deg) scale(0.7);
+                }
+            }
+
+            &.second {
+                z-index: 5;
+                img {
+                    transform: scale(0.8);
+                }
+            }
+
+            &.third {
+                img {
+                    transform: translate(-8rem, 0.5rem) rotate(10deg) scale(0.7);
+                }
+            }
+        }
+    }
+}

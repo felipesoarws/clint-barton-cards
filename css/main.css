@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 4rem;
+  gap: 4rem;
+}
+
+body .title {
+  margin: 2rem 0;
+}
+
+body .title h1 {
+  color: #39626c;
+}
+
+body .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 25rem;
+}
+
+body .cards:hover .card {
+  width: 15rem;
+}
+
+body .cards:hover .card img {
+  width: 15rem;
+  border-radius: 1rem;
+}
+
+body .cards:hover .card.first img {
+  -webkit-transform: translate(4rem, 0.4rem) rotate(-5deg) scale(0.8);
+          transform: translate(4rem, 0.4rem) rotate(-5deg) scale(0.8);
+}
+
+body .cards:hover .card.second {
+  z-index: 5;
+}
+
+body .cards:hover .card.second img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+body .cards:hover .card.third img {
+  -webkit-transform: translate(-4rem, 0.4rem) rotate(5deg) scale(0.8);
+          transform: translate(-4rem, 0.4rem) rotate(5deg) scale(0.8);
+}
+
+body .cards .card {
+  width: 15rem;
+}
+
+body .cards .card img {
+  width: 15rem;
+  border-radius: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body .cards .card.first {
+  z-index: -1;
+}
+
+body .cards .card.first img {
+  -webkit-transform: translate(8rem, 0.5rem) rotate(-10deg) scale(0.7);
+          transform: translate(8rem, 0.5rem) rotate(-10deg) scale(0.7);
+}
+
+body .cards .card.second {
+  z-index: 5;
+}
+
+body .cards .card.second img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+body .cards .card.third img {
+  -webkit-transform: translate(-8rem, 0.5rem) rotate(10deg) scale(0.7);
+          transform: translate(-8rem, 0.5rem) rotate(10deg) scale(0.7);
+}
+/*# sourceMappingURL=main.css.map */
